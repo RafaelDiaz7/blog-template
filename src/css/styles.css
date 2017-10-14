@@ -1,0 +1,187 @@
+/* RESET STYLES */
+html{
+	font-size: 16px;
+	font-family: "Lato", sans-serif;
+	box-sizing: border;
+}
+
+body{
+	margin: 0;
+}
+
+*,
+*:before,
+*:after{
+	box-sizing: inherit;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+li{
+	text-decoration: none;
+}
+
+/*MOBILE FIRST STYLES*/
+.wrapper{
+	padding: 0 16px;
+}
+
+.container{
+	background: #fff;
+}
+
+.item{
+	background-color: #EEE;
+	border: thin solid #000;
+}
+
+.Header{
+	background-color: #064b51;
+}
+
+.Logo{
+	color: #fff;
+	background-color: #000;
+	height: 60px;
+	margin-bottom: 1em;
+	text-align: center; 
+}
+
+.Nav{
+	padding-top: 3em; 
+	background-color: rgb(0,0,0);
+	position: absolute;
+	left: -18em;
+	top: 0;
+	z-index: 20;
+	transition: all .3s;
+	height: 100%;	
+}
+
+.Nav.show{
+	left: 0;
+}
+
+#show-nav{
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: -.7em;
+	left: .6em;
+	z-index: 30;
+	font-size: 2em;
+	color: #FF334C;
+	cursor: pointer;
+}
+
+.Menu{
+	width: 15em;
+	margin:2em auto;
+	padding-left: 0;
+	list-style: none;
+	line-height: 45px;
+}
+
+.Menu a{
+	display: block;
+	width: 100%;
+	text-decoration:none;
+	color: #DDD;
+	text-transform: uppercase;
+}
+
+.Menu a:hover{
+	margin-left: 8px;
+}
+
+
+.Menu li{
+	padding-left: 1.3em;
+	margin-bottom: .5em;
+	box-shadow:3px 0 rgb(255,255,255) inset;
+	font-family: "Raleway", sans-serif;
+}
+
+.Menu li:hover{
+	box-shadow: 13em 0 #222 inset;
+}
+.Articles{
+	padding: 2em;
+}
+
+.Article{
+	margin-bottom: 1em;
+	padding: 1.2em;
+	line-height: 1.4;
+	border-radius: .5em;
+}
+.Article h3{
+	font-size: 14px;
+}
+.Article h2 a:hover{
+	color: #444;
+}
+.Article .A{
+	padding: .5em;
+	color: #fff;
+	background-color: #334CFF;
+}
+
+
+.Article .A:hover{
+	background-color:#FF334C; 
+}
+
+.Aside{
+	margin-top: 3.5em;
+}
+
+.aside-content{
+	padding: 3em;
+	margin-bottom: 2em;
+}
+
+.Footer{
+	height: 300px;
+	font-size: 14px;
+	background-color: #444;
+	color:#fff;
+}
+
+/*DESKTOP STYLES*/
+@media screen and (min-width: 64em) {
+	.wrapper{
+	margin: 0 1em;
+	}
+
+	.container{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.Logo{
+		width: 100%;
+	}
+
+	.Aside{
+		width: 20%;
+	}
+	.Nav{
+		left: -95em;
+	}
+	.Articles {
+		width: 80%;
+	}
+
+	.Article{
+		width: 90%;
+	}
+	.Social, .Nav{ width: 100%; }
+	.Footer{
+		padding: 30px;
+		flex-wrap: wrap;
+	}
+}
