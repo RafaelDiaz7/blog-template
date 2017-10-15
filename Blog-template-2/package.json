@@ -1,0 +1,21 @@
+{
+  "name": "sazi",
+  "version": "1.0.0",
+  "description": "Blog template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "blog",
+    "template",
+    "html",
+    "css"
+  ],
+  "author": "Rafael Diaz in 07/10/2017",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0"
+  }
+}
